@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Phone Calculator</title>
+  </head>
+  <body class="font-[JetBrains_mono]">
+    <div class="w-screen h-screen flex justify-center" id="whole_container">
+      <div
+        id="mobile_calculator_container"
+        class="bg-[#EBEBEB] h-[926px] w-[428px] rounded-[30px]"
+      >
+        <div id="top_side" class="h-[340px]"><p></p></div>
+        <div
+          id="mid_line"
+          class="h-1 ml-16 mr-16 bg-linear-to-r from-[#E5E3DD] to-[#EBEAEA00]"
+        ></div>
+        <div
+          id="bottom_side"
+          class="mt-[23px] grid grid-flow-row grid-cols-4 gap-2.5 place-items-center"
+        >
+          <div
+            id="div_button_container"
+            class="flex justify-center items-center h-[72px] w-[72px] rounded-[70px] bg-[#F1DE9C]"
+          >
+            <p class="text-[24px] font-normal">C</p>
+          </div>
+          <div
+            id="div_button_container"
+            class="flex justify-center items-center h-[72px] w-[72px] rounded-[70px] bg-[#F1DE9C]"
+          >
+            <p class="text-[24px] font-normal">(</p>
+          </div>
+          <div
+            id="div_button_container"
+            class="flex justify-center items-center h-[72px] w-[72px] rounded-[70px] bg-[#F1DE9C]"
+          >
+            <p class="text-[24px] font-normal">)</p>
+          </div>
+          <div
+            id="div_button_container"
+            class="flex justify-center items-center h-[72px] w-[72px] rounded-[70px] bg-[#F9DC75]"
+          >
+            <p class="text-[24px] font-normal">÷</p>
+          </div>
+          <div
+            id="div_button_container"
+            class="flex justify-center items-center h-[72px] w-[72px] rounded-[70px] bg-[#F1DE9C]"
+          >
+            <p class="text-[24px] font-normal">√</p>
+          </div>
+          <div
+            id="div_button_container"
+            class="flex justify-center items-center h-[72px] w-[72px] rounded-[70px] bg-[#F1DE9C]"
+          >
+            <p class="text-[24px] font-normal">%</p>
+          </div>
+          <div
+            id="div_button_container"
+            class="flex justify-center items-center h-[72px] w-[72px] rounded-[70px] bg-[#F1DE9C]"
+          >
+            <p class="text-[24px] font-normal">+/-</p>
+          </div>
+          <div
+            id="div_button_container"
+            class="flex justify-center items-center h-[72px] w-[72px] rounded-[70px] bg-[#F9DC75]"
+          >
+            <p class="text-[24px] font-normal">x</p>
+          </div>
+          <div
+            id="div_button_container"
+            class="flex justify-center items-center h-[72px] w-[72px] rounded-[70px] bg-linear-to-r from-[#E5E3DD] to-[#EBEAEA00]"
+          >
+            <p class="text-[24px] font-normal">7</p>
+          </div>
+          <div
+            id="div_button_container"
+            class="flex justify-center items-center h-[72px] w-[72px] rounded-[70px] bg-linear-to-r from-[#E5E3DD] to-[#EBEAEA00]"
+          >
+            <p class="text-[24px] font-normal">8</p>
+          </div>
+          <div
+            id="div_button_container"
+            class="flex justify-center items-center h-[72px] w-[72px] rounded-[70px] bg-linear-to-r from-[#E5E3DD] to-[#EBEAEA00]"
+          >
+            <p class="text-[24px] font-normal">9</p>
+          </div>
+          <div
+            id="div_button_container"
+            class="flex justify-center items-center h-[72px] w-[72px] rounded-[70px] bg-[#F9DC75]"
+          >
+            <p class="text-[24px] font-normal">-</p>
+          </div>
+          <div
+            id="div_button_container"
+            class="flex justify-center items-center h-[72px] w-[72px] rounded-[70px] bg-linear-to-r from-[#E5E3DD] to-[#EBEAEA00]"
+          >
+            <p class="text-[24px] font-normal">4</p>
+          </div>
+          <div
+            id="div_button_container"
+            class="flex justify-center items-center h-[72px] w-[72px] rounded-[70px] bg-linear-to-r from-[#E5E3DD] to-[#EBEAEA00]"
+          >
+            <p class="text-[24px] font-normal">5</p>
+          </div>
+          <div
+            id="div_button_container"
+            class="flex justify-center items-center h-[72px] w-[72px] rounded-[70px] bg-linear-to-r from-[#E5E3DD] to-[#EBEAEA00]"
+          >
+            <p class="text-[24px] font-normal">6</p>
+          </div>
+          <div
+            id="div_button_container"
+            class="flex justify-center items-center h-[72px] w-[72px] rounded-[70px] bg-[#F9DC75]"
+          >
+            <p class="text-[24px] font-normal">+</p>
+          </div>
+          <div
+            id="div_button_container"
+            class="flex justify-center items-center h-[72px] w-[72px] rounded-[70px] bg-linear-to-r from-[#E5E3DD] to-[#EBEAEA00]"
+          >
+            <p class="text-[24px] font-normal">1</p>
+          </div>
+          <div
+            id="div_button_container"
+            class="flex justify-center items-center h-[72px] w-[72px] rounded-[70px] bg-linear-to-r from-[#E5E3DD] to-[#EBEAEA00]"
+          >
+            <p class="text-[24px] font-normal">2</p>
+          </div>
+          <div
+            id="div_button_container"
+            class="flex justify-center items-center h-[72px] w-[72px] rounded-[70px] bg-linear-to-r from-[#E5E3DD] to-[#EBEAEA00]"
+          >
+            <p class="text-[24px] font-normal">3</p>
+          </div>
+          <div
+            id="div_button_container"
+            class="flex justify-center items-center h-[161px] w-[72px] rounded-[30px] bg-linear-to-r from-[#F5C61D] to-[#F9DC74] row-span-2"
+          >
+            <p class="text-[24px] font-normal">=</p>
+          </div>
+          <div
+            id="div_button_container"
+            class="flex justify-center items-center h-[72px] w-[172px] rounded-[30px] bg-linear-to-r from-[#E5E3DD] to-[#EBEAEA00] col-span-2"
+          >
+            <p class="text-[24px] font-normal">.</p>
+          </div>
+                    <div
+            id="div_button_container"
+            class="flex justify-center items-center h-[72px] w-[72px] rounded-[70px] bg-linear-to-r from-[#E5E3DD] to-[#EBEAEA00]"
+          >
+            <p class="text-[24px] font-normal">0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
